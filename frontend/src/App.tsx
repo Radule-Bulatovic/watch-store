@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import { Layout } from "./Components/Layout/Layout";
-import { Watches } from "./Components/Pages/Watches/Watches";
-import { Brands } from "./Components/Pages/Brands/Brands";
-import { ShoppingCart } from "./Components/Pages/ShoppingCart/ShoppingCart";
+import { Layout } from "./components/Layout/Layout";
+import { Watches } from "./components/Pages/Watches/Watches";
+import { Brands } from "./components/Pages/Brands/Brands";
+import { ShoppingCart } from "./components/Pages/ShoppingCart/ShoppingCart";
 import { ROUTES } from "./constants";
-import { Brand } from "./Components/Pages/Brand/Brand";
+import { Brand } from "./components/Pages/Brand/Brand";
 
 function App() {
   return (

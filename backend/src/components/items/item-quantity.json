@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_items_item_quantities",
+  "info": {
+    "displayName": "itemQuantity"
+  },
+  "options": {},
+  "attributes": {
+    "watch": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::watch.watch"
+    },
+    "quantity": {
+      "type": "integer"
+    }
+  }
+}

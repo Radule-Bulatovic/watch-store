@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react";
 import { WatchCard } from "../../UI/Card/WatchCard";
 import { Watch } from "../../../api";
+import { WatchT } from "../../../types";
 
 export const Watches = () => {
-  const [watches, setWatches] = useState([]);
+  const [watches, setWatches] = useState<WatchT[]>([]);
 
   useEffect(() => {
     const getData = async () => {
       const response = await Watch.all();
-      setWatches(JSON.parse(response.data).data);
+      setWatches(response.data.data);
     };
     getData();
   }, []);

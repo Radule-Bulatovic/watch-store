@@ -1,2 +1,3 @@
-export * from "./Watch";
-export * from "./Brand";
+export * from "./watch";
+export * from "./brand";
+export * from "./order";

@@ -1,3 +1,7 @@
 import { Axios } from "axios";
 
-export const http = new Axios({ baseURL: "http://localhost:1337/api" });
+export const http = new Axios({
+  baseURL: "http://localhost:1337/api",
+  responseType: "json",
+  transformResponse: (res) => JSON.parse(res),
+});
